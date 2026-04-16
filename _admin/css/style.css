@@ -1,0 +1,483 @@
+.sidebar{
+    min-height: 100vh;
+    position: sticky;
+    top:0;
+    position: relative;
+}
+
+li:last-child{
+    position: absolute;
+    bottom: 10px;
+}
+
+.table-categories{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    width: 100%;
+}
+
+.table_columns{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table img, .prev-img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.name-blocks{
+    width: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.category-block{
+    gap: 10px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.category-block .category-name{
+    font-size: 18px;
+}
+
+.category-block .preview-image{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.category-block .action-buttons{
+    width: 60%;
+}
+
+.category-block .preview-image img{
+    border-radius: 15px;
+}
+
+.modal {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+    opacity: 0;
+    transition: all 1s linear;
+}
+.modal._active{
+    display: flex;
+    opacity: 1;
+    
+}
+.modal__wrapper {
+    background-color: white;
+    padding: 30px;
+    max-width: 548px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.news-modal .modal__wrapper{
+    max-width: 700px;
+}
+
+.service-modal .modal__wrapper{
+    max-width: 1000px;
+}
+
+.modal__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal__close img{
+    /* pointer-events: none; */
+}
+
+.modal__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    /* identical to box height, or 52px */
+    letter-spacing: 0.02em;
+
+    color: #571496;
+    margin-bottom: 16px;
+}
+
+.modal__description {
+    margin-bottom: 42px;
+}
+
+.admin-content{
+    margin-left: 20px;
+}
+
+.removed{
+    opacity: 0.75;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pictures{
+    display: flex;
+    flex-direction: column;
+}
+.pictures img{
+    width: 30%;
+    display: flex;
+    align-self: center;
+    margin: 20px;
+    border: 2px solid cadetblue;
+}
+
+.table .logo{
+    width: 100%;
+}
+
+.scalled{
+    width: 50%;
+}
+
+.text-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-signin .container{
+    align-self: center;
+    justify-content: center;
+}
+
+.action-buttons{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.news-block{
+    width: 47%;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.news-block .details{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-block .news-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-block .news-description{
+    width: 58%;
+}
+
+.news-description span{
+   
+    font-weight: 600;
+}
+
+.news-block .news-description .text-format{
+    width: 100%;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+.news-block .details > div span{
+    font-weight: 600;
+}
+
+.news-block .details > div{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.news-block .details img{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-block .h-element span{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.news-block .h-element .content{
+    margin-top: 10px;
+    width: 50%;
+}
+
+
+.container-news{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-preview img{
+    width: 50%;
+    border-radius: 7px;
+}
+
+.news-content pre.text-format{
+    text-align: inherit;
+}
+
+pre.text-format{
+    width: 70%;
+    white-space: pre-wrap;
+    text-align: justify;
+}
+
+.news-buttons{
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.gallery-table{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.gallery-table .image-block{
+    width: 18%;
+    margin: 10px;
+    position: relative;
+}
+
+.image-block .photo{
+    max-height: 250px;
+    height: 100%;
+}
+
+.remove-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.image-block .remove-button:hover{
+    background-color: rgb(179, 233, 245);
+    transition: all 0.3s linear;
+}
+
+.image-block .remove-button:not(:hover){
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.add-button{
+    display: flex;
+    border: 2px dashed #179ab5;
+    border-radius: 15px;
+    cursor: pointer;
+    justify-content: center;
+    max-height: 250px;
+}
+
+.add-button img{
+    width: 15%;
+}
+
+.gallery-table .add-button:hover{
+    background-color: rgb(179, 233, 245);
+    transition: all 0.3s linear;
+}
+
+.gallery-table .add-button:not(:hover){
+    background-color: white;
+    transition: all 0.3s linear;
+}
+
+.table-services{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-services .single__block{
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 20%;
+    margin: 0px 10px 10px 10px;
+}
+
+.single__block .services-block{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.single__block .category-name{
+    margin-left: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.services-block .service-item{
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    margin: 10px;
+    gap: 20px;
+}
+
+.service-item .actions{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actions a{
+    /* width: 47%; */
+    margin: 0px 5px 20px 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.details > div{
+    width: 23%;
+    text-align: center;
+}
+
+.price-field{
+    text-align: center;
+}
+
+.ages-field{
+    text-align: center;
+}
+
+.select-category{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+}
+
+.select-category #categories{
+    margin-top: 9px;
+    padding: 6px;
+    text-align: center;
+}
+
+.service-modal .pictures{
+    margin-top: 20px;
+}
+
+.pictures .gallery{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-photo{
+    margin-top: 10px;
+    width:  25%;
+}
+
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-item{
+    width: 16%;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-item img{
+    border-color: #571496;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.orders-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.admin-content{
+    width: 100%;
+}
+
+.orders-container > div{
+    width: 49%;
+}
+
+.dynamic-value{
+    position: relative;
+}
+
+.dynamic-value .changed-value{
+    position: absolute;
+    background-color: #c31f8a;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    top: 0px;
+    right: -10px;
+    font-weight: 700;
+}
